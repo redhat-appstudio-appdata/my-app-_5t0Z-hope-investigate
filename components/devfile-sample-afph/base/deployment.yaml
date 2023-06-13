@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-afph
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/redhat-user-workloads/ssadeghi-tenant/my-app/devfile-sample-afph@sha256:7f0543af668c24c6256a62efde312d237b4a3f0c715f164210d6023838f77606
         name: my-nodejs
         ports:
         - containerPort: 3001

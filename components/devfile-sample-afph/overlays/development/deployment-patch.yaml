@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-afph
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/ssadeghi-tenant/my-app/devfile-sample-afph@sha256:7f0543af668c24c6256a62efde312d237b4a3f0c715f164210d6023838f77606
+        name: my-nodejs
+        resources: {}
+status: {}
